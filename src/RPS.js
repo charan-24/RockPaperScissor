@@ -26,33 +26,33 @@ export function RPS(){
         let rurl=signs[x].url;
         setRimg(rurl);
         let a=sign.id,b=x;
-        if(a==0){
-            if(b==1){
+        if(a===0){
+            if(b===1){
                 setRes(`Paper beat's Rock,You Lose`);
             }
-            else if(b==2){
+            else if(b===2){
                 setRes(`Rock beats Scissor,You win`);
             }
             else{
                 setRes(`Tie!`);
             }
         }
-        else if(a==1){
-            if(b==0){
+        else if(a===1){
+            if(b===0){
                 setRes(`Paper beat's Rock,You Win`);
             }
-            else if(b==2){
+            else if(b===2){
                 setRes(`Scissor beats Paper,You Lose`);
             }
             else{
                 setRes(`Tie!`);
             }
         }
-        else if(a==2){
-            if(b==0){
+        else if(a===2){
+            if(b===0){
                 setRes(`Rock beat's Scissor,You Lose`);
             }
-            else if(b==1){
+            else if(b===1){
                 setRes(`Scissor beats Paper,You win`);
             }
             else{
@@ -68,6 +68,7 @@ export function RPS(){
                 return <>
                 <button onClick={()=>handleClick({sign,signs})}>
                     <img src={sign.url} alt={sign.url} key={sign.id}></img>
+                    <h1 className="text-style-bold">{sign.alt}</h1>
                 </button>
                 </>    
             })
