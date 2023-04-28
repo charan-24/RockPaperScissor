@@ -1,0 +1,28 @@
+.signs{
+   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; 
+}
+.btn{
+  font-size: 1.5rem;
+}
+.result{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.output{
+  font-size: large;
+  font-weight: bolder;
+}
+@media (max-width:426px){
+  .signs button img,.result img{
+    width: 100px;
+    height: 100px;
+  }
+
+}
