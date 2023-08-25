@@ -66,8 +66,8 @@ export function RPS(){
             <div className="signs mt-2 mb-5">{
             signs.map((sign)=>{
                 return <>
-                <button onClick={()=>handleClick({sign,signs})}>
-                    <img src={sign.url} alt={sign.url} key={sign.id}></img>
+                <button key={sign.alt} onClick={()=>handleClick({sign,signs})}>
+                    <img src={sign.url} alt={sign.alt}></img>
                     <h1 className="text-style-bold">{sign.alt}</h1>
                 </button>
                 </>    
@@ -84,8 +84,7 @@ export function RPS(){
                     <img src={rimg}>
                     </img>
                     <h2 className="text-center">Computer</h2>
-                </div>
-                
+                </div>  
             </div>
             
     </>
